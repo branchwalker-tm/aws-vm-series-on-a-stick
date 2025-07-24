@@ -8,8 +8,8 @@ from panos.firewall import Firewall
 from panos.network import ManagementProfile, Zone, EthernetInterface, VirtualRouter, StaticRoute
 from panos.policies import Rulebase, SecurityRule, NatRule
 
-##################################################
-#							Define functions									#
+#################################################
+#              Define functions                 #
 #################################################
 
 def get_terraform_outputs():
@@ -58,7 +58,7 @@ def change_admin_pass():
 				print(f"An unexpected error occurred: {e}")
 
 ###################################################
-#							Define variables									 #
+#                Define variables                #
 ##################################################
 
 # Get Terraform outputs from the statefile and assign them to variables
