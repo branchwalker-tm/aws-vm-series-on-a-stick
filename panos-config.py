@@ -171,8 +171,8 @@ web_rule = SecurityRule(
         )
 
 ##################################################
-#               Execute the config							 #
-#								TODO: Add validation logic       #
+#               Execute the config               #
+#               TODO: Add validation logic       #
 ##################################################
 
 # Login to the firewall and change the admin password
