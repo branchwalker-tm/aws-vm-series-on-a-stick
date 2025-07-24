@@ -43,19 +43,19 @@ def get_first_host(cidr_block):
     return ".".join(parts)
 
 def change_admin_pass():
-		try:
-				result = subprocess.run(['bash', pass_script], check=True, stdout=subprocess.DEVNULL)
-				print("\nChanging admin password on the firewall.")
-				print(f"Bash script return code: {result.returncode}")
+      try:
+        result = subprocess.run(['bash', pass_script], check=True, stdout=subprocess.DEVNULL)
+        print("\nChanging admin password on the firewall.")
+        print(f"Bash script return code: {result.returncode}")
 
-		except FileNotFoundError:
-				print(f"Error: The script at '{pass_script}' was not found.")
-		except FileNotFoundError:
-				print(f"Error: The script at '{pass_script}' was not found.")
-		except subprocess.CalledProcessError as e:
-				print(f"Error: The script failed with return code {e.returncode}")
-		except Exception as e:
-				print(f"An unexpected error occurred: {e}")
+      except FileNotFoundError:
+        print(f"Error: The script at '{pass_script}' was not found.")
+      except FileNotFoundError:
+        print(f"Error: The script at '{pass_script}' was not found.")
+      except subprocess.CalledProcessError as e:
+        print(f"Error: The script failed with return code {e.returncode}")
+      except Exception as e:
+        print(f"An unexpected error occurred: {e}")
 
 ###################################################
 #                Define variables                #
@@ -114,8 +114,8 @@ eth2 = EthernetInterface(
         )
 
 vr = VirtualRouter(
-						name = 'default',
-						interface = ['ethernet1/1', 'ethernet1/2']
+            name = 'default',
+            interface = ['ethernet1/1', 'ethernet1/2']
 				)
 
 default_route = StaticRoute(
