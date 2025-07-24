@@ -1,24 +1,22 @@
-# outputs.tf
-
 ################################################################################
 # Password and auth code
 ################################################################################
 
 output "admin_password" {
-	description = "The password entered by the user."
-	value				= var.admin_password
-	sensitive  	= true
+  description = "The password entered by the user."
+  value       = var.admin_password
+  sensitive  	= true
 }
 
 output "auth_code" {
-	description = "The auth code entered by the user."
-	value 			= var.vmseries_auth_code
-	sensitive 	= true
+  description = "The auth code entered by the user."
+  value       = var.vmseries_auth_code
+  sensitive 	= true
 }
 
 output "key_pair_name" {
-	description = "The key pair name from variables.tf"
-	value				= var.key_pair_name
+  description = "The key pair name from variables.tf"
+  value       = var.key_pair_name
 }
 
 ################################################################################
