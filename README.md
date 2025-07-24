@@ -3,7 +3,7 @@
 A Terraform set that deploys a VM-Series Firewall in AWS with an Ubuntu EC2 instance behind it. A Python script that configures the firewall to allow SSH traffic to and from the Ubuntu intance.
 
 ## Python Version
-`pan-os-python` has a dependency on disutils which was deprecated in Python 3.12, so you'll need to use Python 3.11 in the meantime. Use `pyenv` or something similar to accomodate this:
+`pan-os-python` has a dependency on `disutils` which was deprecated in Python 3.12, so you'll need to use Python 3.11 in the meantime. Use `pyenv` or something similar to accomodate this:
 
 1. ```echo -e ''if command -v pyenv 1>/dev/null 2>&1; then eval "$(pyenv init -)"\nfi' >>> ~/.bash_profile```
 2. Restart your terminal
